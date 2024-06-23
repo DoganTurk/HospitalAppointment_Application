@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/hospitalspinner"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="116dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/Doctorspinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/Doctorspinner"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/hospitalspinner"
+        app:layout_constraintTop_toBottomOf="@+id/hospitalspinner" />
+
+    <Spinner
+        android:id="@+id/Datespinner"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/hospitalspinner"
+        app:layout_constraintTop_toBottomOf="@+id/Doctorspinner" />
+
+    <Button
+        android:id="@+id/CreateAppointment"
+        android:layout_width="217dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="84dp"
+        android:text="CreateAppointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/hospitalspinner" />
+
+    <Spinner
+        android:id="@+id/timespinner"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/hospitalspinner"
+        app:layout_constraintTop_toBottomOf="@+id/Datespinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
